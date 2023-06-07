@@ -23,7 +23,7 @@ exports.create = async(req,res) =>{
 exports.get = async(req,res) => {
     try {
         const blogs = await Blog.find()
-        res.status(200).json({
+        res.status(200).send({
           data: blogs,
           message: '  ',
         })
