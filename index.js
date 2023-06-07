@@ -43,7 +43,7 @@ app.use(async (req, res, next) => {
   
 });
 app.use(express.static('uploads'))
-app.use('/',userRouter)
+app.use('/user',userRouter)
 app.use('/', blogRouter)
 
 
