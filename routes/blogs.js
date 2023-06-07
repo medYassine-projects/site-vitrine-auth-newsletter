@@ -36,6 +36,6 @@ const storage = multer.diskStorage({
   })
 
 router.post('/create', upload.array('backgroundImage'),blogController.create)
-router.get('/get', blogController.get)
+router.get('/', blogController.get)
 router.delete('/:id',blogController.delete)
 module.exports = router
