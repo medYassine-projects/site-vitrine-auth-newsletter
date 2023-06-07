@@ -51,8 +51,6 @@ const server = app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
-
-
 mongoose.connect(process.env.url, {useNewUrlParser: true})
 const con = mongoose.connection
  
