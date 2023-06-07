@@ -44,7 +44,7 @@ app.use(async (req, res, next) => {
 });
 app.use(express.static('uploads'))
 app.use('/',userRouter)
-app.use('/', blogRouter)
+app.use('/blog', blogRouter)
 
 
 const server = app.listen(port, hostname, () => {
